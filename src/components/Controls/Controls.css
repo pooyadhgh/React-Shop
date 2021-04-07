@@ -1,0 +1,29 @@
+.controls {
+  width: 50rem;
+  background-color: #fafaff;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
+  border-radius: 5px;
+  padding: 32px 0;
+  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.075);
+}
+
+.order-btn {
+  background: #e1bee7;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: #8e24aa;
+  font: inherit;
+  padding: 16px 32px;
+  margin-top: 32px;
+}
+
+.price p {
+  color: #6a1b9a;
+  font: inherit;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
