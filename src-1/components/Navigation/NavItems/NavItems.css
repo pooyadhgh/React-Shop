@@ -1,0 +1,8 @@
+.nav-items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  height: 100%;
+}

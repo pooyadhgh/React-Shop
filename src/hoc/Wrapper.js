@@ -1,2 +1,3 @@
-const Wrapper = props => props.children;
-export default Wrapper;
+const Wrapper = (props) => props.children
+
+export default Wrapper

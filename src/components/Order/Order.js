@@ -1,21 +1,22 @@
-import React from 'react';
-import Wrapper from '../../hoc/Wrapper';
-import Button from '../UI/Button/Button';
+import React from 'react'
 
-const Order = props => {
-  const summery = Object.keys(props.products).map(item => {
+import Wrapper from '../../hoc/Wrapper'
+import Button from '../UI/Button/Button'
+
+const Order = (props) => {
+  const summery = Object.keys(props.products).map((item) => {
     return (
       <li key={item}>
         {item}: {props.products[item]}
       </li>
-    );
-  });
+    )
+  })
 
   return (
     <Wrapper>
       <h3>Order</h3>
       <ul>{summery}</ul>
-      <p>Total Price is: {props.price}</p>
+      <p>Total Price: {props.price}</p>
       <p>Continue?</p>
       <Button btnType="success" click={props.continue}>
         Yes
@@ -24,7 +25,7 @@ const Order = props => {
         No
       </Button>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Order;
+export default Order

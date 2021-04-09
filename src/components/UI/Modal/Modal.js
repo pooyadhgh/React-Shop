@@ -1,9 +1,11 @@
-import React from 'react';
-import Wrapper from '../../../hoc/Wrapper';
-import Backdrop from '../Backdrop/Backdrop';
-import './Modal.css';
+import React from 'react'
 
-const Modal = props => {
+import Wrapper from '../../../hoc/Wrapper'
+import Backdrop from '../Backdrop/Backdrop'
+
+import './Modal.css'
+
+const Modal = (props) => {
   return (
     <Wrapper>
       <Backdrop show={props.show} click={props.modalClose} />
@@ -17,7 +19,7 @@ const Modal = props => {
         {props.children}
       </div>
     </Wrapper>
-  );
-};
+  )
+}
 
-export default Modal;
+export default Modal
